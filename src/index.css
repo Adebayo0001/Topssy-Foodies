@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --color-primary-green: #1A3C34;
+  --color-accent-yellow: #FCD34D;
+  --color-accent-red-orange: #E34B35;
+  --color-bg-light-green: #DCFCE7;
+  --color-deep-charcoal: #1F2937;
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar and minor cleanups for a premium app feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1A3C34;
+}
+::-webkit-scrollbar-thumb {
+  background: #FCD34D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fbc02d;
+}
