@@ -28,7 +28,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
                 </svg>
               </div>
               <span className="text-xl font-bold tracking-tight text-white font-sans">
-                Topssy<span className="text-accent-yellow"> Foodies</span>
+                Delish
               </span>
             </div>
             
@@ -145,7 +145,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
 
         {/* Legal Disclaimer & Small notes */}
         <div className="pt-8 border-t border-emerald-950/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-          <p>© 2026 Topssy Foodies Lounge Ltd. All rights reserved.</p>
+          <p>© 2026 Delish Lounge Ltd. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#privacy" className="hover:text-accent-yellow transition-colors">Privacy Policy</a>
             <span>•</span>

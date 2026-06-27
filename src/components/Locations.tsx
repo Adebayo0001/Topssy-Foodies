@@ -143,7 +143,7 @@ export default function Locations({ onBackToHome }: LocationsProps) {
                   HQ Headquarters Office
                 </span>
                 <p className="text-sm font-bold mt-0.5">
-                  DelishDrop HQ
+                  Delish HQ
                 </p>
                 <p className="text-xs text-gray-200 mt-1 leading-relaxed max-w-md">
                   15 Adeola Odeku Street, Victoria Island, Lagos, Nigeria

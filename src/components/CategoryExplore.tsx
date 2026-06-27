@@ -3,6 +3,9 @@ import { motion } from "motion/react";
 import { ArrowRight, Flame, Pizza, Beef, Salad, Sparkles, FolderHeart } from "lucide-react";
 import { CATEGORIES } from "../data";
 
+const aboutImg = new URL("../assets/about_categories.jpg", import.meta.url).href;
+
+
 interface CategoryExploreProps {
   onSelectCategory: (categoryName: string) => void;
 }
@@ -53,8 +56,8 @@ export default function CategoryExplore({ onSelectCategory }: CategoryExplorePro
             {/* Central Round Plate Image with stunning native appeal */}
             <div className="relative w-72 sm:w-80 lg:w-[400px] h-72 sm:h-80 lg:h-[400px] rounded-full p-2 bg-amber-900/10 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)] flex items-center justify-center">
               <img
-                src="https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=600&q=80"
-                alt="Smoky Party Jollof Board"
+                src={aboutImg}
+                alt="Delicious Traditional Nigerian Platter"
                 className="w-[92%] h-[92%] rounded-full object-cover shadow-inner rotate-12 group-hover:rotate-45 transition-transform duration-1000"
                 referrerPolicy="no-referrer"
               />

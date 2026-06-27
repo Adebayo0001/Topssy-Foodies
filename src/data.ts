@@ -1,5 +1,9 @@
 import { FoodItem, CategoryItem, Review } from "./types";
 
+const smokyJollofImg = new URL("./assets/jollof_party_3.jpg", import.meta.url).href;
+const poundedYamImg = new URL("./assets/pounded_yam_egusi.jpg", import.meta.url).href;
+const friedRiceImg = new URL("./assets/naija_fried_rice.jpg", import.meta.url).href;
+
 export const TOP_PICKS: FoodItem[] = [
   {
     id: "smoky-party-jollof",
@@ -11,7 +15,7 @@ export const TOP_PICKS: FoodItem[] = [
     reviewsCount: 312,
     prepTime: "15 min",
     calories: "580 Cal",
-    image: "https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=600&q=80"
+    image: smokyJollofImg
   },
   {
     id: "gourmet-beef-suya",
@@ -35,7 +39,7 @@ export const TOP_PICKS: FoodItem[] = [
     reviewsCount: 245,
     prepTime: "20 min",
     calories: "820 Cal",
-    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80"
+    image: poundedYamImg
   }
 ];
 
@@ -87,7 +91,7 @@ export const FLASH_DEALS: FoodItem[] = [
     reviewsCount: 164,
     prepTime: "12 min",
     calories: "610 Cal",
-    image: "https://images.unsplash.com/photo-1603133872878-3129846399e2?auto=format&fit=crop&w=600&q=80",
+    image: friedRiceImg,
     isFlashDeal: true,
     badge: "25% OFF"
   },
@@ -102,7 +106,7 @@ export const FLASH_DEALS: FoodItem[] = [
     reviewsCount: 112,
     prepTime: "15 min",
     calories: "320 Cal",
-    image: "https://images.unsplash.com/photo-1547928576-a4a3323dce9d?auto=format&fit=crop&w=600&q=80",
+    image: poundedYamImg,
     isFlashDeal: true,
     badge: "27% OFF"
   },
@@ -152,7 +156,7 @@ export const REVIEWS: Review[] = [
     name: "Tobi Adebayo",
     role: "Senior Consultant at PwC Lagos",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
-    comment: "Topssy Foodies saved our executive lunch session! The Smoky Party Jollof is sensational—tastes exactly like authentic local firewood Jollof. Unbelievable quality.",
+    comment: "Delish saved our executive lunch session! The Smoky Party Jollof is sensational—tastes exactly like authentic local firewood Jollof. Unbelievable quality.",
     rating: 5
   },
   {
@@ -168,7 +172,7 @@ export const REVIEWS: Review[] = [
     name: "Kelechi Okafor",
     role: "Engineering Director at Moniepoint",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
-    comment: "Simply the most authentic Asun and Suya in town! Beautiful spice level and very fast delivery. Topssy Foodies is easily our daily choice now.",
+    comment: "Simply the most authentic Asun and Suya in town! Beautiful spice level and very fast delivery. Delish is easily our daily choice now.",
     rating: 5
   }
 ];

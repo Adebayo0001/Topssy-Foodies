@@ -250,7 +250,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Full-Stack DelishDrop server running on http://localhost:${PORT}`);
+    console.log(`Full-Stack Delish server running on http://localhost:${PORT}`);
   });
 }
 

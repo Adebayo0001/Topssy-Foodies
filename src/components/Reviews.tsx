@@ -14,10 +14,10 @@ export default function Reviews() {
             NIGERIA'S FINEST PALATES
           </p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-green tracking-tight font-sans">
-            Savor the Stories of Topssy Foodies
+            Savor the Stories of Delish
           </h2>
           <p className="mt-3 text-sm sm:text-base text-gray-500 font-sans font-light leading-relaxed">
-            Discover why busy professionals, executive boards, and food enthusiasts across Lagos trust Topssy Foodies 
+            Discover why busy professionals, executive boards, and food enthusiasts across Lagos trust Delish 
             to bring authentic, fire-kissed flavor straight to their tables.
           </p>
           <div className="h-1 w-12 bg-accent-yellow mx-auto mt-4 rounded-full" />

@@ -18,7 +18,7 @@ export default function AIChatbot() {
     {
       id: "welcome",
       sender: "bot",
-      text: "👋 Hello! I'm DelishDrop's AI assistant. Ask me about our menu, delivery times, or your order!",
+      text: "👋 Hello! I'm Delish's AI assistant. Ask me about our menu, delivery times, or your order!",
       timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
     }
   ]);

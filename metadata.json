@@ -1,6 +1,6 @@
 {
-  "name": "Topssy Foodies",
-  "description": "Minimal, intuitive, and highly appetizing food ordering experience for Topssy Foodies, serving authentic and premium Nigerian delicacies with smooth, mouth-watering motion.",
+  "name": "Delish",
+  "description": "Minimal, intuitive, and highly appetizing food ordering experience for Delish, serving authentic and premium Nigerian delicacies with smooth, mouth-watering motion.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

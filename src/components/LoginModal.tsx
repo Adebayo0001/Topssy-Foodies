@@ -113,7 +113,7 @@ export default function LoginModal({ isOpen, onClose, onLoginSuccess }: LoginMod
                   Corporate Login
                 </h3>
                 <p className="text-xs text-gray-400 font-body mt-1">
-                  Connect to your DelishDrop office workspace.
+                  Connect to your Delish office workspace.
                 </p>
               </div>
               

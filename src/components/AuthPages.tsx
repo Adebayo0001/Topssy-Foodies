@@ -50,7 +50,7 @@ export default function AuthPages({ mode, onNavigate, onLoginSuccess, triggerToa
 
         await setDoc(doc(db, "users", user.uid), userProfile);
 
-        triggerToast(`Welcome to DelishDrop, ${fullName.trim()}!`, "success");
+        triggerToast(`Welcome to Delish, ${fullName.trim()}!`, "success");
         onLoginSuccess({
           name: fullName.trim(),
           email: email.trim().toLowerCase(),
@@ -248,7 +248,7 @@ export default function AuthPages({ mode, onNavigate, onLoginSuccess, triggerToa
         <div className="mt-6 text-center text-xs">
           {mode === "login" ? (
             <p className="text-gray-400 font-medium">
-              New to Topssy Foodies?{" "}
+              New to Delish?{" "}
               <button
                 onClick={() => onNavigate("/register")}
                 className="text-[#E34B35] font-extrabold hover:underline"

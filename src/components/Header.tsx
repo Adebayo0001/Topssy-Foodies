@@ -87,16 +87,16 @@ export default function Header({
 
   return (
     <header id="header" className="sticky top-0 z-40 bg-primary-green text-white shadow-xl border-b border-primary-green/20">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-[80px] flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-[64px] flex items-center justify-between">
         {/* Left: Brand Logo with styling and local reference */}
         <div 
           onClick={handleLogoClick}
-          className="flex items-center gap-3 cursor-pointer select-none group"
+          className="flex items-center gap-2.5 cursor-pointer select-none group"
         >
-          <div className="w-10 h-10 bg-[#fbc42d] rounded-full flex items-center justify-center shadow-md group-hover:scale-105 transition-all duration-300">
+          <div className="w-9 h-9 bg-[#fbc42d] rounded-full flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300">
             {/* Elegant organic leaf icon inside gold circle */}
             <svg 
-              className="w-6 h-6 text-[#113129] fill-current"
+              className="w-5 h-5 text-[#113129] fill-current"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -106,8 +106,8 @@ export default function Header({
             </svg>
           </div>
           <div>
-            <span className="text-[25px] font-black tracking-tight font-sans text-white leading-none">
-              Topssy Foodies
+            <span className="text-2xl font-black tracking-tight font-sans text-white leading-none">
+              Delish
             </span>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function Header({
           <button
             onClick={onOpenCart}
             id="cart-btn"
-            className="flex items-center gap-2 bg-[#1b352f] hover:bg-[#152a25] px-5 py-2 rounded-full border border-white/10 transition-all duration-300 shadow-sm group cursor-pointer"
+            className="flex items-center gap-2 bg-[#1b352f] hover:bg-[#152a25] px-4.5 py-1.5 rounded-full border border-white/10 transition-all duration-300 shadow-sm group cursor-pointer"
           >
             <ShoppingCart className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
             <span className="font-medium text-sm text-white">Cart</span>
@@ -149,7 +149,7 @@ export default function Header({
             <button
               onClick={() => onNavigate && onNavigate(user.isAdmin ? "/admin" : "/profile")}
               id="profile-btn"
-              className="flex items-center justify-center bg-[#FCD34D] text-[#1A3C34] hover:bg-[#ebd03d] border-none px-6 py-2 rounded-full text-sm font-extrabold transition-all duration-300 cursor-pointer shadow-sm"
+              className="flex items-center justify-center bg-[#FCD34D] text-[#1A3C34] hover:bg-[#ebd03d] border-none px-5 py-1.5 rounded-full text-sm font-extrabold transition-all duration-300 cursor-pointer shadow-sm"
             >
               <span>{user.isAdmin ? "Admin Portal" : "My Profile"}</span>
             </button>
@@ -157,7 +157,7 @@ export default function Header({
             <button
               onClick={() => onNavigate ? onNavigate("/login") : onOpenLogin()}
               id="login-btn"
-              className="flex items-center justify-center border border-white hover:bg-white hover:text-primary-green px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer"
+              className="flex items-center justify-center border border-white hover:bg-white hover:text-primary-green px-5 py-1.5 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer"
             >
               <span>Login</span>
             </button>

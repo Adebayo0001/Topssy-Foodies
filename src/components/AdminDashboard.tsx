@@ -167,7 +167,7 @@ export default function AdminDashboard({ user, onLogout, onNavigate, triggerToas
             </div>
             <div>
               <h3 className="text-xs font-black tracking-tight leading-none text-white">
-                Admin Control
+                Delish Admin
               </h3>
               <p className="text-[10px] text-emerald-300 font-mono font-bold mt-1 uppercase tracking-wider">
                 Workspace Live
