@@ -1,8 +1,8 @@
 import { FoodItem, CategoryItem, Review } from "./types";
+import poundedYamImg from "./assets/pounded_yam_egusi.jpg";
+import friedRiceImg from "./assets/naija_fried_rice.jpg";
 
-const smokyJollofImg = new URL("./assets/jollof_party_3.jpg", import.meta.url).href;
-const poundedYamImg = new URL("./assets/pounded_yam_egusi.jpg", import.meta.url).href;
-const friedRiceImg = new URL("./assets/naija_fried_rice.jpg", import.meta.url).href;
+const smokyJollofImg = "https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=800&q=80";
 
 export const TOP_PICKS: FoodItem[] = [
   {

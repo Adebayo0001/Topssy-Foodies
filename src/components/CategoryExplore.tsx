@@ -2,8 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Flame, Pizza, Beef, Salad, Sparkles, FolderHeart } from "lucide-react";
 import { CATEGORIES } from "../data";
-
-const aboutImg = new URL("../assets/about_categories.jpg", import.meta.url).href;
+import aboutImg from "../assets/about_categories.jpg";
 
 
 interface CategoryExploreProps {

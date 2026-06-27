@@ -29,6 +29,16 @@ const db = initializeFirestore(firebaseApp, {
 async function startServer() {
   const app = express();
 
+  // Simple Request Logger to debug image loading issues
+  app.use((req, res, next) => {
+    const start = Date.now();
+    res.on("finish", () => {
+      const duration = Date.now() - start;
+      console.log(`[HTTP] ${req.method} ${req.url} - ${res.statusCode} (${duration}ms)`);
+    });
+    next();
+  });
+
   // Middleware for parsing JSON bodies
   // Webhook needs raw body for signature verification in real systems, 
   // but let's parse json and handle signature calculation on parsed string.

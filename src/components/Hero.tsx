@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Star, Flame } from "lucide-react";
-
-const jollofHero = new URL("../assets/jollof_party_1.jpg", import.meta.url).href;
+const jollofHero = "https://lh3.googleusercontent.com/d/1PJgj7Z_JiHSTyYNrG-8CtnsGZBEYh1-Y";
 
 export default function Hero() {
   const scrollToMenu = () => {
@@ -84,7 +83,7 @@ export default function Hero() {
             <div className="relative w-full max-w-md aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl bg-[#142e28] border border-white/5">
               <img
                 src={jollofHero}
-                alt="Steaming Authentic Nigerian Party Jollof Rice with Roasted Chicken, Roasted Garlic and Tomatoes"
+                alt="Steaming Authentic Nigerian Delicacy with Flame-Grilled Chicken, Sweet Fried Plantains and Vegetables"
                 className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
               />
