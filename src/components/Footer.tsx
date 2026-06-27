@@ -17,7 +17,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
           {/* Col 1: Brand & Bio */}
-          <div className="md:col-span-1 text-left">
+          <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
             <div 
               onClick={handleLogoClick}
               className="flex items-center gap-2 cursor-pointer mb-5 group w-fit"
@@ -50,7 +50,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
           </div>
 
           {/* Col 2: Quick Links */}
-          <div className="text-left">
+          <div className="text-center md:text-left">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider font-mono mb-5">
               Service Links
             </h4>
@@ -95,7 +95,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
           </div>
 
           {/* Col 3: Hours & Support */}
-          <div className="text-left">
+          <div className="text-center md:text-left">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider font-mono mb-5">
               Delivery Hours
             </h4>
@@ -119,22 +119,22 @@ export default function Footer({ setActiveSection }: FooterProps) {
           </div>
 
           {/* Col 4: Reach Out */}
-          <div className="text-left">
+          <div className="text-center md:text-left flex flex-col items-center md:items-start">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider font-mono mb-5">
               Island Logistics
             </h4>
-            <ul className="space-y-4 text-xs sm:text-sm">
-              <li className="flex gap-2.5 items-start">
+            <ul className="space-y-4 text-xs sm:text-sm flex flex-col items-center md:items-start">
+              <li className="flex gap-2.5 items-start justify-center md:justify-start">
                 <MapPin className="w-5 h-5 text-accent-yellow shrink-0 mt-0.5" />
                 <span className="text-gray-400">
                   Broad Street Corporate Hub, Marina, Lagos Island, Nigeria.
                 </span>
               </li>
-              <li className="flex gap-2.5 items-center">
+              <li className="flex gap-2.5 items-center justify-center md:justify-start">
                 <Phone className="w-4 h-4 text-accent-yellow shrink-0" />
                 <span className="text-white font-mono">+234 812 707 7777</span>
               </li>
-              <li className="flex gap-2.5 items-center">
+              <li className="flex gap-2.5 items-center justify-center md:justify-start">
                 <Mail className="w-4 h-4 text-accent-yellow shrink-0" />
                 <span className="text-gray-400 font-mono">orders@topssyfoodies.com</span>
               </li>

@@ -256,7 +256,7 @@ export default function App() {
       )}
 
       {/* Main Body Content Blocks */}
-      <main className="flex-grow animate-fade-in-up">
+      <main className="flex-grow animate-fade-in-up pb-20 md:pb-0">
         {currentPath === "/order-tracking" || currentPath === "/tracking" ? (
           <OrderTracking
             onBackToHome={() => handleNavigate("/")}

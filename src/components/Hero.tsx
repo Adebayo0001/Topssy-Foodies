@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative bg-primary-green overflow-hidden flex items-center pt-20 pb-28 lg:pt-28 lg:pb-36"
+      className="relative bg-primary-green overflow-hidden flex items-center pt-16 pb-16 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-36"
     >
       {/* Subtle background glow for an organic, lush feeling */}
       <div className="absolute top-10 left-10 w-80 h-80 bg-emerald-800/20 rounded-full blur-3xl pointer-events-none animate-pulse" style={{ animationDuration: "6s" }} />
@@ -22,14 +22,14 @@ export default function Hero() {
       
       {/* Main Container */}
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           
           {/* 1. Left Column (Hero copy and CTAs - now wider to reduce image footprint) */}
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-7 flex flex-col text-left"
+            className="w-full lg:w-7/12 flex flex-col text-left"
           >
             {/* Premium Tag */}
             <div className="inline-flex items-center gap-2 bg-[#1b3d34] border border-white/10 px-4 py-2 rounded-full w-fit mb-8 shadow-sm">
@@ -40,24 +40,24 @@ export default function Hero() {
             </div>
 
             {/* Headline with powerful typographic hierarchy */}
-            <h1 className="text-5xl sm:text-6xl lg:text-[68px] font-black text-white leading-[1.08] tracking-tight font-sans">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black text-white leading-[1.08] tracking-tight font-sans">
               Authentic <br />
               Naija Flavors <br />
               <span className="text-[#fbc42d]">Made to Salivate.</span>
             </h1>
 
             {/* Paragraph Subtext */}
-            <p className="mt-8 text-[15px] sm:text-[16px] text-[#b3ccc5] leading-relaxed font-sans font-normal max-w-lg">
+            <p className="mt-6 text-[15px] sm:text-[16px] text-[#b3ccc5] leading-relaxed font-sans font-normal max-w-lg">
               From the bustling streets of Marina to the high-rises of VI—we bring Lagos Island's finest meals straight to your office desk.
             </p>
 
             {/* CTAs and Stars */}
-            <div className="mt-10 flex flex-wrap items-center gap-6">
+            <div className="mt-8 flex flex-wrap items-center gap-6">
               <motion.button
                 onClick={scrollToMenu}
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(251, 196, 45, 0.25)" }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-[#fbc42d] hover:bg-[#e2af25] text-[#113129] px-10 py-4.5 rounded-full font-extrabold text-[16px] shadow-lg transition-all duration-300 cursor-pointer"
+                className="bg-[#fbc42d] hover:bg-[#e2af25] text-[#113129] px-8 sm:px-10 py-3.5 sm:py-4.5 rounded-full font-extrabold text-[15px] sm:text-[16px] shadow-lg transition-all duration-300 cursor-pointer"
               >
                 Order Now
               </motion.button>
@@ -68,7 +68,7 @@ export default function Hero() {
                     <Star key={i} className="w-4.5 h-4.5 fill-[#fbc42d] text-[#fbc42d]" />
                   ))}
                 </div>
-                <span className="text-[15px] font-bold text-white font-sans">4.9 / 5.0 (Naija Choice)</span>
+                <span className="text-[14px] sm:text-[15px] font-bold text-white font-sans">4.9 / 5.0 (Naija Choice)</span>
               </div>
             </div>
           </motion.div>
@@ -78,9 +78,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5 flex justify-center lg:justify-end h-full"
+            className="w-full lg:w-5/12 flex justify-center lg:justify-end h-full"
           >
-            <div className="relative w-full max-w-md aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl bg-[#142e28] border border-white/5">
+            <div className="relative w-full max-w-md aspect-[4/3] sm:aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl bg-[#142e28] border border-white/5">
               <img
                 src={jollofHero}
                 alt="Steaming Authentic Nigerian Delicacy with Flame-Grilled Chicken, Sweet Fried Plantains and Vegetables"

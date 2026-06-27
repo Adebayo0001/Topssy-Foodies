@@ -50,7 +50,7 @@ export default function CategoryExplore({ onSelectCategory }: CategoryExplorePro
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           
           {/* Left: Pizza graphic and 5 Floating Category Cards (7 cols on desktop) */}
-          <div className="lg:col-span-7 flex justify-center items-center relative py-12 lg:py-16">
+          <div className="lg:col-span-7 flex flex-col justify-center items-center relative py-12 lg:py-16">
             
             {/* Central Round Plate Image with stunning native appeal */}
             <div className="relative w-72 sm:w-80 lg:w-[400px] h-72 sm:h-80 lg:h-[400px] rounded-full p-2 bg-amber-900/10 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)] flex items-center justify-center">

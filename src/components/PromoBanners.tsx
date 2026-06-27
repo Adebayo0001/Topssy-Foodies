@@ -30,7 +30,7 @@ export default function PromoBanners({ onAddToCart }: PromoBannersProps) {
         </div>
 
         {/* Pristine Banners Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Card 1: Yellow Theme */}
           <motion.div 

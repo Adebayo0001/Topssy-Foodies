@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ShoppingCart, LogIn, Menu, X, MapPin } from "lucide-react";
+import { ShoppingCart, LogIn, Menu, X, MapPin, User } from "lucide-react";
 import { CartItem } from "../types";
 
 interface HeaderProps {
@@ -106,7 +106,7 @@ export default function Header({
             </svg>
           </div>
           <div>
-            <span className="text-2xl font-black tracking-tight font-sans text-white leading-none">
+            <span className="text-xl sm:text-2xl font-black tracking-tight font-sans text-white leading-none">
               Delish
             </span>
           </div>
@@ -164,21 +164,56 @@ export default function Header({
           )}
         </div>
 
-        {/* Mobile menu button */}
-        <div className="flex md:hidden items-center gap-3">
+        {/* Mobile Actions and Hamburger Menu */}
+        <div className="flex md:hidden items-center gap-2">
+          {/* Mobile Cart Button */}
           <button
             onClick={onOpenCart}
-            className="relative p-2.5 bg-[#142e28] rounded-xl text-white"
+            className="relative p-2.5 bg-[#142e28] hover:bg-[#0f221e] rounded-xl text-white transition-all cursor-pointer"
+            title="Cart"
           >
             <ShoppingCart className="w-5 h-5 text-accent-yellow" />
-            <span className="absolute -top-1 -right-1 bg-accent-yellow text-primary-green text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">
-              {totalCartItems}
-            </span>
+            {totalCartItems > 0 && (
+              <span className="absolute -top-1 -right-1 bg-accent-yellow text-primary-green text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                {totalCartItems}
+              </span>
+            )}
           </button>
+
+          {/* Mobile Login / Profile Button */}
+          {user ? (
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onNavigate && onNavigate(user.isAdmin ? "/admin" : "/profile");
+              }}
+              className="p-2.5 bg-[#FCD34D] text-[#1A3C34] hover:bg-[#ebd03d] rounded-xl transition-all cursor-pointer"
+              title={user.isAdmin ? "Admin Portal" : "My Profile"}
+            >
+              <User className="w-5 h-5" />
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                if (onNavigate) {
+                  onNavigate("/login");
+                } else {
+                  onOpenLogin();
+                }
+              }}
+              className="p-2.5 border border-white/20 hover:bg-white/10 rounded-xl transition-all cursor-pointer text-white"
+              title="Login"
+            >
+              <LogIn className="w-5 h-5" />
+            </button>
+          )}
           
+          {/* Mobile Hamburger menu toggle button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2.5 hover:bg-white/5 rounded-xl text-white transition-colors"
+            className="p-2.5 hover:bg-white/5 rounded-xl text-white transition-colors cursor-pointer"
+            title="Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
